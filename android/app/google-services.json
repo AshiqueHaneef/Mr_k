@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "175803631416",
+    "project_id": "mrk-trader",
+    "storage_bucket": "mrk-trader.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175803631416:android:9f48975787511bdbb923cd",
+        "android_client_info": {
+          "package_name": "com.r.Mrk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175803631416-rdd2300ctsfts3496tel6ttmld6rr74b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMxWXeHvhPCGiOczMb3-ESIe8XwIQ7BX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175803631416-rdd2300ctsfts3496tel6ttmld6rr74b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

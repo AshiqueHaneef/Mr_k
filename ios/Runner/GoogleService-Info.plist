@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>175803631416-8p3ulnt4ms33u222q4l32s7b06oblake.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.175803631416-8p3ulnt4ms33u222q4l32s7b06oblake</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAoEn8ZDw3HSH088pZCjNukxWcDAhkOVLc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>175803631416</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.riz.mrk</string>
+	<key>PROJECT_ID</key>
+	<string>mrk-trader</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mrk-trader.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:175803631416:ios:80ae8b7e44861a00b923cd</string>
+</dict>
+</plist>
