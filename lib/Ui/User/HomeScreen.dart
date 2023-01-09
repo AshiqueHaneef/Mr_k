@@ -25,7 +25,6 @@ import 'package:intl/intl.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:http/http.dart' as http;
 
-
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../Utils/DisplaySize.dart';
@@ -312,11 +311,11 @@ class HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               onTap: () {
-                CategoryModel categoryModel = new CategoryModel();
+                CategoryModel categoryModel = CategoryModel();
                 categoryModel.categoryId = "0";
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) =>
-                        UserProductListScreen(categoryModel, true)));
+                        UserProductListScreen(categoryModel, false)));
               },
             ),
             Padding(
@@ -326,7 +325,7 @@ class HomeScreenState extends State<HomeScreen> {
                 child: IconButton(
                   icon: const Icon(MdiIcons.whatsapp),
                   onPressed: () {
-                    _launchInBrowser("https://wa.me/971557117184");
+                    _launchInBrowser("https://wa.link/jiyug5");
                     // FlutterOpenWhatsapp.sendSingleMessage("971557117184", "");
                   },
                 ),
@@ -354,8 +353,9 @@ class HomeScreenState extends State<HomeScreen> {
                   ),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) =>
-                            UserCategoryScreen(categoryModelList)));
+                      builder: (context) =>
+                          UserCategoryScreen(categoryModelList),
+                    ));
                   },
                 ),
                 Card(
@@ -509,14 +509,22 @@ class HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> _launchInBrowser(String url) async {
-    if (await canLaunch(url)) {
-      await launch(
-        url,
-        forceSafariVC: false,
-        forceWebView: false,
-        headers: <String, String>{'my_header_key': 'my_header_value'},
-      );
-    } else {}
+    Uri uri = Uri.parse(url);
+
+    if (!await launchUrl(
+      uri,
+      mode: LaunchMode.externalApplication,
+    )) {
+      throw 'Could not launch $url';
+    }
+    // if (await canLaunch(url)) {
+    //   await launch(
+    //     url,
+    //     forceSafariVC: false,
+    //     forceWebView: false,
+    //     headers: <String, String>{'my_header_key': 'my_header_value'},
+    //   );
+    // } else {}
   }
 
   Future<void> sendPushMessage(String _token) async {
