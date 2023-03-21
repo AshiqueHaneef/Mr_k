@@ -894,7 +894,7 @@ class HomeScreenState extends State<HomeScreen> {
           childAspectRatio: 1,
         ),
         shrinkWrap: true,
-        itemCount: 6,
+        itemCount: billList.length > 5 ? 6 : billList.length,
         itemBuilder: (context, index) {
           return GestureDetector(
             child: Card(

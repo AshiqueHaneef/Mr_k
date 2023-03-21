@@ -143,8 +143,9 @@ class UserProductListScreenState extends State<UserProductListScreen> {
                                         text: null !=
                                                 subCategoryModel.subCategoryName
                                             ? "  " +
-                                                subCategoryModel.subCategoryName!
-                                            : "  " + categoryModel.categoryName!,
+                                                subCategoryModel
+                                                    .subCategoryName!
+                                            : "  ${categoryModel.categoryName ?? ""}",
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold),
